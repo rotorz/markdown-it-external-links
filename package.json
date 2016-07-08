@@ -1,10 +1,10 @@
 {
   "name": "markdown-it-external-links",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Plugin for markdown-it that adds CSS classes to links that fall outside of the specified internal domain(s).",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kruncher/markdown-it-external-links"
+    "url": "https://github.com/rotorz/markdown-it-external-links"
   },
   "keywords": [
     "markdown-it",

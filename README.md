@@ -1,8 +1,8 @@
-# markdown-it-external-links [![Build Status](https://travis-ci.org/kruncher/markdown-it-external-links.svg?branch=master)](https://travis-ci.org/kruncher/markdown-it-external-links) 
+# markdown-it-external-links [![Build Status](https://travis-ci.org/rotorz/markdown-it-external-links.svg?branch=master)](https://travis-ci.org/rotorz/markdown-it-external-links) 
 
 [![npm version](https://badge.fury.io/js/markdown-it-external-links.svg)](https://badge.fury.io/js/markdown-it-external-links)
-[![Dependency Status](https://david-dm.org/kruncher/markdown-it-external-links.svg)](https://david-dm.org/kruncher/markdown-it-external-links)
-[![devDependency Status](https://david-dm.org/kruncher/markdown-it-external-links/dev-status.svg)](https://david-dm.org/kruncher/markdown-it-external-links#info=devDependencies)
+[![Dependency Status](https://david-dm.org/rotorz/markdown-it-external-links.svg)](https://david-dm.org/rotorz/markdown-it-external-links)
+[![devDependency Status](https://david-dm.org/rotorz/markdown-it-external-links/dev-status.svg)](https://david-dm.org/rotorz/markdown-it-external-links#info=devDependencies)
 
 Plugin for markdown-it that adds CSS classes to links that fall outside of the specified
 internal domain(s).
