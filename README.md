@@ -7,6 +7,7 @@
 Plugin for markdown-it that adds CSS classes to links that fall outside of the specified
 internal domain(s).
 
+
 Example input:
 ```markdown
 - [Internal Link A](/)
