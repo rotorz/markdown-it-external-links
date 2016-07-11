@@ -74,19 +74,13 @@ console.log(output);
 
 ### Options
 
-- `externalClassName`: `string` | `null` - External class to use for external links.
-                                           Specify a value of `null` to disable output.
-                                           **Default Value:** `"external-link"`
-- `internalClassName`: `string` | `null` - Internal class to use for external links.
-                                           Specify a value of `null` to disable output.
-                                           **Default Value:** `null`
-- `internalDomains`: `string[]`          - An array of domains that are considered internal.
-                                           **Default Value:** `[]`
-                                           **Example Value:** `[ "example.org" ]`
-- `externalTarget`: `string`             - Target attribute for external links.
-                                           **Default Value:** `_self`
-- `internalTarget`: `string`             - Target attribute for internal links.
-                                           **Default Value:** `_self`
+Option              | Type               | Default              | Description
+:-------------------|:-------------------|:---------------------|:----------------------------------------------------------------------------------------
+`externalClassName` | `string` | `null`  | `"external-link"`    | External class to use for external links. Specify a value of `null` to disable output.
+`internalClassName` | `string` | `null`  | `null`               | Internal class to use for external links. Specify a value of `null` to disable output.
+`internalDomains`   | `string[]`         | `[]`                 | An array of domains that are considered internal. **Example Value:** `[ "example.org" ]`
+`externalTarget`    | `string`           | `"_self"`            | Target attribute for external links.
+`internalTarget`    | `string`           | `"_self"`            | Target attribute for internal links.
 
 
 ## Contribution Agreement
