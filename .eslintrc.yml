@@ -1,0 +1,58 @@
+env:
+  browser: true
+  es6: true
+  node: true
+extends: xo
+rules:
+  array-bracket-spacing:
+    - error
+    - always
+  curly:
+    - error
+    - multi-line
+  dot-location: off
+  dot-notation: off
+  indent:
+    - error
+    - 2
+    - SwitchCase: 1 
+  max-len: off
+  no-multiple-empty-lines:
+    - error
+    - max: 2
+      maxBOF: 0
+      maxEOF: 1
+  no-return-assign: off
+  no-unused-vars:
+    - error
+    - argsIgnorePattern: "^_"
+      varsIgnorePattern: "^(given|should)$"
+  no-var: error
+  object-curly-spacing:
+    - error
+    - always
+  one-var:
+    - error
+    - initialized: never
+  operator-linebreak:
+    - error
+    - before
+  padded-blocks:
+    - error
+    - classes: always
+      switches: never
+  quotes:
+    - error
+    - double
+    - allowTemplateLiterals: true
+      avoidEscape: true
+  quote-props: off
+  require-jsdoc: off
+  space-before-function-paren:
+    - error
+    - anonymous: always
+      named: never
+  valid-jsdoc:
+    - error
+    - prefer:
+        return: returns

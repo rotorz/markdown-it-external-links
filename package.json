@@ -14,12 +14,16 @@
   ],
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha ./test/spec/ --recursive"
+    "test": "npm run test-lint && npm run test-spec",
+    "test-lint": "eslint .",
+    "test-spec": "mocha ./test/spec/ --recursive"
   },
   "author": "Rotorz Limited",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "eslint": "^3.0.1",
+    "eslint-config-google": "^0.6.0",
     "markdown-it": "^6.0.4",
     "mocha": "^2.3.4",
     "mocha-testdata": "^1.1.2",

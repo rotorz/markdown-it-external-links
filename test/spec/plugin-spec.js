@@ -6,12 +6,12 @@
 
 const given = require("mocha-testdata");
 const should = require("should");
-const markdownIt = require('markdown-it');
+const markdownIt = require("markdown-it");
 
-const externalLinks = require('../../lib');
+const externalLinks = require("../../lib");
 
 
-describe('markdown-it-external-links', function() {
+describe("markdown-it-external-links", function () {
 
   given(
     "//external-domain.com/foo",
