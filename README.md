@@ -76,8 +76,8 @@ console.log(output);
 
 Option              | Type               | Default              | Description
 :-------------------|:-------------------|:---------------------|:----------------------------------------------------------------------------------------
-`externalClassName` | `string` | `null`  | `"external-link"`    | External class to use for external links. Specify a value of `null` to disable output.
-`internalClassName` | `string` | `null`  | `null`               | Internal class to use for external links. Specify a value of `null` to disable output.
+`externalClassName` | `string` \| `null`  | `"external-link"`    | External class to use for external links. Specify a value of `null` to disable output.
+`internalClassName` | `string` \| `null`  | `null`               | Internal class to use for external links. Specify a value of `null` to disable output.
 `internalDomains`   | `string[]`         | `[]`                 | An array of domains that are considered internal. **Example Value:** `[ "example.org" ]`
 `externalTarget`    | `string`           | `"_self"`            | Target attribute for external links.
 `internalTarget`    | `string`           | `"_self"`            | Target attribute for internal links.
