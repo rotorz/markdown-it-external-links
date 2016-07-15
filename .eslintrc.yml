@@ -22,6 +22,7 @@ rules:
     - max: 2
       maxBOF: 0
       maxEOF: 1
+  no-negated-condition: off
   no-return-assign: off
   no-unused-vars:
     - error
