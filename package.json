@@ -23,7 +23,7 @@
   "dependencies": {},
   "devDependencies": {
     "eslint": "^3.0.1",
-    "eslint-config-google": "^0.6.0",
+    "eslint-config-xo": "^0.13.0",
     "markdown-it": "^6.0.4",
     "mocha": "^2.3.4",
     "mocha-testdata": "^1.1.2",
