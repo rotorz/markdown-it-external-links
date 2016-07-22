@@ -131,4 +131,44 @@ describe("markdown-it-external-links", function () {
       .should.be.eql(expected);
   });
 
+  given(
+    "//external-domain.com/foo",
+    "//external-domain.com",
+    "http://external-domain.com",
+    "https://external-domain.com"
+  ).
+  it("adds custom rel attribute to external links", function (href) {
+    let source = `Text with [link](${href}).`;
+    let expected = `<p>Text with <a href="${href}" class="external-link" rel="noopener">link</a>.</p>`;
+
+    let markdownProcessor = markdownIt().use(externalLinks, {
+      externalRel: "noopener"
+    });
+    markdownProcessor.render(source)
+      .trim()
+      .should.be.eql(expected);
+  });
+
+  given(
+    "//internal-domain.com/foo",
+    "//internal-domain.com",
+    "http://internal-domain.com",
+    "https://internal-domain.com",
+    "/index.html",
+    "index.html",
+    "../index.html"
+  ).
+  it("adds custom rel attribute to internal links", function (href) {
+    let source = `Text with [link](${href}).`;
+    let expected = `<p>Text with <a href="${href}" rel="nofollow">link</a>.</p>`;
+
+    let markdownProcessor = markdownIt().use(externalLinks, {
+      internalDomains: [ "internal-domain.com" ],
+      internalRel: "nofollow"
+    });
+    markdownProcessor.render(source)
+      .trim()
+      .should.be.eql(expected);
+  });
+
 });
