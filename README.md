@@ -81,6 +81,8 @@ Option              | Type               | Default              | Description
 `internalDomains`   | `string[]`         | `[]`                 | An array of domains that are considered internal. **Example Value:** `[ "example.org" ]`
 `externalTarget`    | `string`           | `"_self"`            | Target attribute for external links.
 `internalTarget`    | `string`           | `"_self"`            | Target attribute for internal links.
+`externalRel`       | `string`           | `null`               | Rel attribute for external links.
+`internalRel`       | `string`           | `null`               | Rel attribute for internal links.
 
 
 ## Contribution Agreement
