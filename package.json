@@ -1,6 +1,6 @@
 {
   "name": "markdown-it-external-links",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Plugin for markdown-it that adds CSS classes to links that fall outside of the specified internal domain(s).",
   "repository": {
     "type": "git",
