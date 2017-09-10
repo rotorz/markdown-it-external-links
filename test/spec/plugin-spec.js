@@ -171,4 +171,18 @@ describe("markdown-it-external-links", function () {
       .should.be.eql(expected);
   });
 
+  given(
+    "mailto:max.mustermann@musterweb.de"
+  ).it("adds custom class to external links", function (href) {
+    let source = `Text with [link](${href}).`;
+    let expected = `<p>Text with <a href="${href}" class="custom-mailto-class" target="_blank">link</a>.</p>`;
+
+    let markdownProcessor = markdownIt().use(externalLinks, {
+      mailtoClassName: "custom-mailto-class"
+    });
+
+    markdownProcessor.render(source)
+      .trim()
+      .should.be.eql(expected);
+  });
 });
